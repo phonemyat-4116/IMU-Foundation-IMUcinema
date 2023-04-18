@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IMU_Cinema</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@1,300&family=Mulish:wght@300&family=Nunito:wght@300;400&family=Roboto:wght@100&family=Source+Sans+Pro:wght@300&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+
+        nav{
+            /* background-color: black; */
+            /* background-image: linear-gradient(130deg,black 65%,rgb(129, 128, 128)); */
+            width: 100%;
+            height: 100px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        label{
+            display: block;
+            color: red;
+            font-size: 40px;
+            padding: 30px 20px;
+
+        }
+
+        label span{
+            color: #fff;
+        }
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            margin-right: 50px;
+        }
+
+        ul li{
+            padding: 0 5px;
+        }
+
+        ul li a{
+            text-decoration: none;
+            /* font-weight: bold; */
+            padding: 10px 30px;
+            border-radius: 5px;
+        }
+
+        ul li .login{
+            background-color: red;
+            color: #fff;
+        }
+
+        ul li .signup{
+            background-color: #fff;
+            color: #000;
+        }
+
+        .bannersec{
+            background-image: linear-gradient(130deg,black 50%,rgb(129, 128, 128));
+            height: 100vh;
+        }
+
+        
+        .bannertext{
+            width: 600px;
+            color: white;
+            margin-left: 30px;
+            border: 1px solid rgb(110, 107, 107);
+            padding: 20px 20px;
+            text-align: center;
+        }
+
+        .bannerspan1{
+            font-weight: bold;
+        }
+
+        .bannerspan2{
+            font-family: 'Mulish', sans-serif;
+        }
+
+        .catg{
+            text-decoration: none;
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            padding: 15px 25px;
+            border-radius: 3px;
+
+        }
+
+        .list{
+            text-decoration: none;
+            border: 1px solid #fff;
+            color: white;
+            font-size: 20px;
+            padding: 15px 25px;
+            border-radius: 5px;
+        }
+
+        a{
+            margin: 0 10px;
+        }
+
+        .bannerflex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            position: relative;
+        }
+
+        .netflix_com{
+            position: absolute;
+            top: 50px;
+            right: 50px;
+        }
+
+        .imu-cinema-banner{
+            display: block;
+            margin-left: 50px;
+           
+        }
+
+        .call-action{
+            color: white;
+            margin-bottom: 3rem;
+            margin-left: 3rem;
+        }
+
+        .large-text{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+
+        .get-start{
+            margin-left: 30px;
+            display: flex;
+        }
+
+        #user-email{
+            width: 200px;
+            padding: 15px 10px;
+            font-size: 20px;
+            outline: none;
+            transition: all 0.5s;
+            border: 0;
+            
+        }
+
+        #user-email:focus{
+            width: 350px;
+            background-color: black;
+            color: white;
+            box-shadow: 3px 3px 5px rgb(50, 49, 49);
+            border: 1px solid rgb(50, 49, 49);
+        }
+
+        
+
+        
+        
+    </style>
+    <body>
+
+
+        
+        <section class="bannersec">
+            <nav>
+                <label>IMU<span>Cinema</span></label>
+    
+                <ul>
+                    <li><a href="#" class="login">Login</a></li>
+                    <li><a href="./imuSignup.html" class="signup">Sign Up</a></li>
+                </ul>
+            </nav>
+
+            <div class="bannerflex">
+                <div>
+                    <label class="bannertext"><span class="bannerspan1">Cinema </span><span class="bannerspan2">for IMU Students</span></label>
+    
+                    <img src="./images/IMU-removebg-preview.png" class="imu-cinema-banner" width="300" height="300" alt="netflix">
+    
+                    <br>
+
+                    <div class="call-action">
+                        <font class="large-text">Watch anywhere. Cancel anytime.</font>
+                        <br><br>
+                        <font>Ready to watch? Enter your email to create or restart your membership.</font>
+                    </div>
+    
+                    <div class="get-start" >
+                        <a href="./imuSignup.html" target="_blank" class="catg">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                        <form>
+                            <input type="email" name="user-email" id="user-email" class="" placeholder="Enter Email" autocomplete="off">
+                        </form>
+                        <!-- <a href="#" class="list"><i class="fa-solid fa-list"></i> My List</a> -->
+                    </div>
+                </div>
+    
+                <img src="./images/netflix_1-removebg-preview.png" class="netflix_com" width="700px" alt="netflix_bgremove">
+            </div>
+        </section>
+
+
+    </body>
+</html>

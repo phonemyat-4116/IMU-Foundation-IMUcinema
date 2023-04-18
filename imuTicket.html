@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IMU Ticket</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: sans-serif;
+            background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('https://www.whats-on-netflix.com/wp-content/uploads/2021/08/netflix-library-photo-scaled.jpg');
+            /* background: linear-gradient(45deg,#000000,#B82E1F); */
+            /* background-repeat: no-repeat; */
+            /* background-size: cover; */
+            background-position: center;
+            
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .card{
+            width: 45%;
+            height: 900px;
+            background-color: #000;
+            border-radius: 20px;
+            
+            overflow: hidden;
+
+            margin: 0 20px;
+        }
+
+        img{
+            height: 60%;
+            object-fit: fill;
+        }
+
+        .info-container{
+            padding: 5px 20px;
+        }
+
+        h1{
+            color: white;
+        }
+
+        .info-line{
+            display: flex;
+            align-items: center;
+        }
+
+        .imbd{
+            background-color: yellow;
+            color: black;
+            padding: 10px 10px;
+            border-radius: 10px;
+        }
+
+        .info-btn{
+            display: flex;
+            align-items: center;
+
+            margin: 20px 0;
+        }
+
+        a{
+            width: 150px;
+            text-decoration: none;
+            color: black;
+            background-color: rgb(235, 233, 233);
+            padding: 20px 30px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+
+            /* box-shadow: 2px 2px 1px rgb(191, 190, 190); */
+        }
+
+        .about{
+            color: #fff;
+            line-height: 25px;
+            font-size: 20px;
+        }
+
+        /* end about  */
+
+        /* start seat  */
+
+        .seat{
+            /* background-color: #fff; */
+        }
+
+        .choose-seat{
+            margin-bottom: 4rem;
+        }
+
+        .table{
+            width: 500px;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+
+        .chair{
+            margin: 0 10px;
+            margin-top: 4rem;
+        }
+
+        .chair td{
+            display: inline-block;
+            margin: 10px 10px;
+        }
+
+        .line{
+            width: 300px;
+            height: 2px;
+            background-color: #fff;
+            
+            margin: auto;
+
+            color: white;
+            text-align: center;
+        }
+
+        .status{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 2rem;
+        }
+
+        .status p{
+            color: #fff;
+        }
+
+        .ticket-info{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 10px;
+        }
+
+        label{
+            display: block;
+            width: 180px;
+            color: #000;
+            background-color: yellow;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        select{
+            width: 300px;
+            padding: 10px 20px;
+            font-size: 15px;
+            outline: none;
+            border-radius: 10px;
+        }
+
+        .ticket td{
+            display: inline-block;
+            margin: 10px 5px;
+        }
+
+        
+        .buy-ticket{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            margin-top: 4rem;
+        }
+
+        small{
+            display: block;
+        }
+
+        .buy a{
+            display: block;
+            width: 200px;
+            background-color: rgb(177, 21, 21);
+            color: #fff;
+        }
+        
+
+
+    </style>
+    <body>
+        <div class="container">
+            <div class="card">
+                <img src="./images/pathaan 2.jpg" style="width: 101%;" alt="">
+
+                <div class="info-container">
+                    <h1>Pathaan</h1>
+
+                    <div class="info-line">
+                        <span class="imbd">IMDB 7.6</span>
+                        <span style="color: white; margin: 0 40px;"><i class="fa-regular fa-clock"></i> 2h 12m</span>
+                        <span style="color: white;"><i class="fa-regular fa-calendar"></i> January 25, 2023</span>
+                    </div>
+
+                    <div class="info-btn">
+                        <a href="" style="background-color: rgb(177, 21, 21); color: #fff;">About</a>
+                        <a href="https://www.youtube.com/watch?v=vqu4z34wENw" target="_blank" style="margin: 0 30px;">Trailer</a>
+                        <a href="https://www.google.com/search?q=pathaan+cast&oq=pathaan+cast&aqs=chrome..69i57.2737j0j1&sourceid=chrome&ie=UTF-8" target="_blank" >Cast</a>
+                    </div>
+
+                    <p class="about">Written by Shridhar Raghavan, Abbas Tyrewala and Anand, the film is about Pathaan, an exiled RAW agent, who must take down Jim, a former RAW agent-turned-rogue leader of a private terror organisation, who is planning to spread a deadly lab-generated virus across India.</p>
+
+                </div>
+            </div>
+
+            <div class="card seat">
+                <h1 class="choose-seat" style="padding: 5px 20px;">Choose Seat</h1>
+                
+                <div class="line">
+                    <p style="margin-top: 10px; display: inline-block;">Screen</p>
+                </div>
+
+                <div class="table">
+
+                    <table class="chair"  style="color: #fff;">
+                        <tr>
+                            <td></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-solid fa-square" style="color: yellow;"></i></td>
+                            <td><i class="fa-solid fa-square" style="color: yellow;"></i></td>
+                            <td><i class="fa-solid fa-square" style="color: yellow;"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa-solid fa-square" style="color: grey;"></i></td>
+                            <td><i class="fa-solid fa-square" style="color: grey;"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-solid fa-square" style="color: yellow;"></i></td>
+                            <td><i class="fa-solid fa-square" style="color: yellow;"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td> </td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                        </tr>
+                    </table>
+
+                    <table class="chair"  style="color: #fff;">
+                        <tr>
+                            <td></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-solid fa-square" style="color: grey;"></i></td>
+                            <td><i class="fa-solid fa-square" style="color: grey;"></i></td>
+                            <td><i class="fa-solid fa-square" style="color: grey;"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa-solid fa-square" style="color: yellow;"></i></td>
+                            <td><i class="fa-solid fa-square" style="color: yellow;"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                        </tr>
+
+                        <tr>
+                            <td> </td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                            <td><i class="fa-regular fa-square"></i></td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div class="status">
+                    <p><i class="fa-solid fa-circle" style="color: yellow;"></i> Selected</p>
+                    <p style="margin: 0 40px;"><i class="fa-solid fa-circle" style="color: grey;"></i> Reserved</p>
+                    <p><i class="fa-regular fa-circle"></i> Available</p>
+                </div>
+
+                <div class="ticket-info">
+                    <form>
+                        <table class="ticket" cellspacing="0">
+                            <tr>
+                                <td><label>Choose Location</label></td>
+                                <td> </td>
+                                <td>
+                                    <select id="" class="">
+                                        <option selected>Yangon</option>
+                                        <option>Mandalay</option>
+                                        <option>TaungGyi</option>
+                                        <option>Nay Pyi Taw</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><label>Choose Row</label></td>
+                                <td> </td>
+                                <td>
+                                    <select id="" class="">
+                                        <option selected>All</option>
+                                        <option>Front</option>
+                                        <option>Middle</option>
+                                        <option>Back</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+                <div class="buy-ticket">
+                    <div class="price">
+                        <small style="color: rgb(170, 168, 168); font-size: 20px;">Price</small>
+                        <font color="#fff" size="6">5,000 MMK</font>
+                    </div>
+
+                    <div class="buy">
+                        <a href="" style="padding: 15px 5px;">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
